@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  position: relative;
+}
+body img.fixed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
+}
+body header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 -5px 10px 1px gray;
+}
+body header nav a.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  padding: 1rem;
+}
+body header nav a.navbar-brand img {
+  padding-right: 0.25rem;
+  vertical-align: middle;
+}
+body header nav a.nav-link {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+body header nav a.nav-link i {
+  font-size: 12px;
+  padding-right: 0.25rem;
+}
+body header nav a.nav-link:hover {
+  border-bottom: 2px solid #8bc72c;
+  color: #8bc72c;
+}
+body main section.home_section {
+  min-height: 70vh;
+  background-image: url("../images/background.JPG");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.home_section div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body main section.home_section h2 {
+  color: white;
+}
+body main section.school_details_section {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+body main section.school_details_section div.school_details {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+}
+body main section.school_details_section div.school_details div.details_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body main section.school_details_section div.school_details div.details_wrapper div.details {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 250px;
+  align-items: center;
+}
+body main section.school_details_section div.school_details div.details_wrapper div.details img {
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+  padding: 0.3rem;
+}
+body main section.school_details_section div.school_details div.details_wrapper div.details img:hover {
+  border: 3px solid #8bc72c;
+}
+body main section.school_details_section div.school_details div.details_wrapper div.details h3 {
+  padding: 1rem 0;
+}
+body main section.travel_details_section {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+body main section.travel_details_section div.travel_details {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.travel_details_section div.travel_details .img_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body main section.travel_details_section div.travel_details .img_wrapper img {
+  width: 10rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+}
+body main section.travel_details_section div.travel_details .img_wrapper .cover {
+  flex: 1 1 calc(25% - 10px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.travel_details_section div.travel_details .desc_wrapper {
+  padding: 1rem;
+  justify-content: start;
+}
+body main section.empty_section {
+  min-height: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main section.empty_section h3 {
+  color: white;
+}
+body main section.info_details_section {
+  background-color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+body main section.info_details_section p {
+  margin: 1rem;
+}
+body main section.info_details_section iframe {
+  width: 100%;
+  height: 40vh;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body footer section.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body footer section.brand img {
+  padding: 0.5rem;
+}
+body footer section.brand h4 {
+  padding-bottom: 0.2rem;
+  border-bottom: 0.5px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  header span {
+    display: none;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8bc72c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}/*# sourceMappingURL=style.css.map */

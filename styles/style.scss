@@ -1,0 +1,287 @@
+// $themeColor: rgba(152, 57, 255, 0.5);
+$whiteColor: white;
+$lightgrayColor: #f1f1f1;
+$grayColor: gray;
+$blackColor: black;
+$themeColor: #8bc72c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: $blackColor;
+}
+
+body {
+  position: relative;
+
+  img.fixed-image {
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+  }
+
+  header {
+    background-color: $whiteColor;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 -5px 10px 1px $grayColor;
+
+    nav {
+      a.navbar-brand {
+        display: flex;
+        align-items: center;
+        color: $blackColor;
+        font-weight: 600;
+        padding: 1rem;
+
+        img {
+          padding-right: 0.25rem;
+          vertical-align: middle;
+        }
+      }
+
+      a.nav-link {
+        display: flex;
+        align-items: center;
+        color: $blackColor;
+
+        i {
+          font-size: 12px;
+          padding-right: 0.25rem;
+        }
+      }
+
+      a.nav-link:hover {
+        border-bottom: 2px solid $themeColor;
+        color: $themeColor;
+      }
+    }
+  }
+
+  main {
+    section.home_section {
+      min-height: 70vh;
+      background-image: url("../images/background.JPG");
+      background-size: cover;
+      background-position: center;
+      transition: all 0.75s ease;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div.filter {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        min-height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      h2 {
+        color: $whiteColor;
+      }
+    }
+
+    section.school_details_section {
+      background-color: $whiteColor;
+      padding: 2rem 1rem;
+
+      div.school_details {
+        width: 80%;
+        margin: auto;
+        padding: 2rem 0;
+
+        div.details_wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          div.details {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 250px;
+            align-items: center;
+
+            img {
+              width: 100%;
+              border-radius: 50%;
+              transition: all 0.1s ease-in;
+              padding: 0.3rem;
+              &:hover {
+                border: 3px solid $themeColor;
+              }
+            }
+
+            h3 {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    section.travel_details_section {
+      background-color: $whiteColor;
+      padding: 2rem 1rem;
+
+      div.travel_details {
+        width: 80%;
+        margin: auto;
+        padding: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .img_wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          img {
+            width: 10rem;
+            height: 15rem;
+            border-radius: 0.5rem;
+          }
+
+          .cover {
+            flex: 1 1 calc(25% - 10px);
+            object-fit: cover;
+          }
+        }
+
+        .desc_wrapper {
+          padding: 1rem;
+          justify-content: start;
+        }
+      }
+    }
+
+    section.empty_section {
+      min-height: 50vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        color: $whiteColor;
+      }
+    }
+
+    section.info_details_section {
+      background-color: $whiteColor;
+      padding: 2rem 1rem;
+      text-align: center;
+
+      p {
+        margin: 1rem;
+      }
+
+      iframe {
+        width: 100%;
+        height: 40vh;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: $whiteColor;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    section.brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        padding: 0.5rem;
+      }
+
+      h4 {
+        padding-bottom: 0.2rem;
+        border-bottom: 0.5px solid $whiteColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    span {
+      display: none;
+    }
+  }
+}
+
+// Scrollbar Setting
+// https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $lightgrayColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $themeColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $grayColor;
+}
