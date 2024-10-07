@@ -10,9 +10,8 @@
 
 ## Demo
 
-[![JP Study and Travel Website](https://jp-travel-and-study.netlify.app/images/favicon.png)](https://jp-travel-and-study.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76ac300f-74cd-47ec-a33b-846ecab363f0/deploy-status)](https://jp-travel-and-study.netlify.app)
 
-Click the image above to view the live demo.
 
 ## Introduction
 
