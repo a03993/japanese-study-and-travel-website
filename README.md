@@ -1,17 +1,15 @@
 # Japanese Study & Travel Site
 
+View the deployed version of the website here!
+
+**Demo Link：**[![Netlify Status](https://api.netlify.com/api/v1/badges/29f16514-dc35-4aca-8eb1-447c22757a65/deploy-status)](https://jp-travel-and-study.netlify.app)
+
 ## Table of Contents
 
-1. [Demo](#demo)
-2. [Introduction](#introduction)
-3. [Features](#features)
-4. [Installation](#installation)
-5. [Usage](#usage)
-
-## Demo
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/76ac300f-74cd-47ec-a33b-846ecab363f0/deploy-status)](https://jp-travel-and-study.netlify.app)
-
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
 
 ## Introduction
 
