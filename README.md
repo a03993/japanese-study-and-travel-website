@@ -2,10 +2,17 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
+1. [Demo](#demo)
+2. [Introduction](#introduction)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Usage](#usage)
+
+## Demo
+
+[![JP Study and Travel Website](https://jp-travel-and-study.netlify.app/images/favicon.png)](https://jp-travel-and-study.netlify.app)
+
+Click the image above to view the live demo.
 
 ## Introduction
 
